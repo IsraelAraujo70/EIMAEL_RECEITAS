@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eimael receitas</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header id="cabecalho" class="bg-success text-white">                <!-- Menu -->
+        <div class="navbar navbar-expand-lg navbar-dark container">
+            <h1>Eimael receitas</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav nav-pills navbar-nav">
+                    <li class="nav-item">
+                        <a href="#receitas" class="nav-link">Receitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sobre" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">                <!-- Muda o estilo do menu / observa o scroll do usuário -->
+                <div id="carouselExampleIndicators" class="carousel slide custom-carousel" data-bs-ride="carousel"> <!-- carousel -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/assets/donuts.jpg" class="d-block w-100 imagens" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/strogonoff.jpg" class="d-block w-100 imagens" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/feijoada.jpg" class="d-block w-100 imagens" alt="Slide 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        <section id="receitas"> <!-- Receitas -->
+            <div class="container">
+                <div class="titulo">
+                    <h2>Receitas destaque</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="./assets/donuts.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Donuts Caseiros</h4>
+                                <p class="card-text">Receita deliciosa de donuts caseiros.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-donuts">Ver Receita</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="/assets/strogonoff.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Strogonoff de Mignon</h4>
+                                <p class="card-text">Receita clássica de strogonoff de filé mignon.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-strogonoff">Ver Receita</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="/assets/feijoada.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Feijoada</h4>
+                                <p class="card-text">Receita tradicional de feijoada brasileira.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-feijoada">Ver Receita</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sobre">    <!-- Sobre -->
+            <div class="container">
+                <h2>Sobre nós</h2>
+                <div class="row">
+                    <div class="col-md-8 col-lg-6  col-sm-12 d-flex justify-content-center chefe">
+                        <img src="/assets/chefe.jpg" alt="">
+                    </div>
+                    <div class="col-md-4 col-lg-6  col-sm-12 chefe-sobre">
+                        <h3>Nosso chefe</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quo maiores minima, suscipit deserunt eum ex voluptates quidem asperiores illum accusantium, debitis temporibus sint expedita dolores quas nam. Deserunt, quasi!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quo maiores minima, suscipit deserunt eum ex voluptates quidem asperiores illum accusantium, debitis temporibus sint expedita dolores quas nam. Deserunt, quasi!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato">  <!-- Contato -->
+            <div class="container">
+                <h2>Contato</h2>
+                <h6>Envie sua receita para a gente!</h6>
+                <form action="">
+                    <label class="form-label" for="nome">Insira seu nome:</label>
+                    <input class="form-control" type="text" id="nome">
+                    <label class="form-label" for="email">Insira seu e-mail:</label>
+                    <input class="form-control" type="email" id="email">
+                    <label class="form-label" for="tel">Insira seu telefone:</label>
+                    <input class="form-control" type="tel" id="tel">
+                    <label class="form-label" for="mensagem">Escreva sua receita aqui:</label>
+                    <textarea name="" id="mensagem" class="form-control"></textarea>
+                    <div class="form-check">
+                        <input type="checkbox" id="aceito-termos" class="form-check-input">
+                        <label for="aceito-termos" class="form-check-label">Li e concordo com os termos do site</label>
+                    </div>
+                </form>
+                <button class="btn btn-success" type="submit">Cadastrar-se</button>
+            </div>
+        </section>
+    </div>
+    <footer> <!-- Rodapé -->
+        <div class="container">
+            <p>2024 &copy; Eimael Receitas - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <!-- Modal Donuts -->
+    <div class="modal fade" id="modal-donuts" tabindex="-1" aria-labelledby="modalDonutsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDonutsLabel">Donuts Caseiros</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container d-flex justify-content-center">
+                        <img class="modal-image" src="/assets/donuts.jpg" alt="">
+                    </div>
+                    <nav class="nav nav-tabs">
+                        <button data-bs-toggle="tab" data-bs-target="#donuts-ingredientes" class="nav-link active" type="button">Ingredientes</button>
+                        <button data-bs-toggle="tab" data-bs-target="#donuts-preparo" class="nav-link" type="button">Modo de Preparo</button>
+                    </nav>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="donuts-ingredientes">
+                            <h2>Ingredientes (20 porções)</h2>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/fbdc17cf67d906d28aa2450f948fa6e6/farinha-de-trigo.jpg" alt="">
+                                        <p>4 xícaras (chá) de farinha de trigo</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/64c5f5e09dc0d5850db00802e4ee2fed/acucar-cristal.jpg" alt="">
+                                        <p>1 xícara (chá) de açúcar</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/2c484ffc860bbf21df138a04dd5f2c28/leite.jpg" alt="">
+                                        <p>1 xícara (chá) de leite morno</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/c870063e6c61b3c9e6b6fc4374a6ce31/margarina.jpg" alt="">
+                                        <p>2 colheres (sopa) de manteiga</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/a562de472454e6045c9f75270f9cd0b4/fermento-biologico-seco.jpg" alt="">
+                                        <p>2 tabletes de fermento biológico</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/94a20d33e2970191e1d4d1a48157f47b/ovo.jpg" alt="">
+                                        <p>3 ovos</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/a8c3c6135af458d29f463794aa32c2cf/sal.jpg" alt="">
+                                        <p>1 pitada de sal</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://placehold.co/40x40" alt="">
+                                        <p>Óleo para fritar</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/502c7c99e7d86b69fd0ca5088c618b49/chocolate-meio-amargo.jpg" alt="">
+                                        <p>Chocolate derretido para cobertura (opcional)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="donuts-preparo">
+                            <h2>Modo de Preparo</h2>
+                            <ol>
+                                <li>
+                                    <p>Em uma tigela grande, misture o fermento biológico com o leite morno e uma colher de açúcar. Deixe descansar por cerca de 5 minutos até espumar.</p>
+                                </li>
+                                <li>
+                                    <p>Adicione a farinha de trigo, o restante do açúcar, os ovos, a manteiga derretida e o sal. Misture bem até formar uma massa homogênea.</p>
+                                </li>
+                                <li>
+                                    <p>Sove a massa em uma superfície enfarinhada por cerca de 10 minutos até ficar lisa e elástica. Cubra com um pano e deixe crescer por cerca de 1 hora ou até dobrar de tamanho.</p>
+                                </li>
+                                <li>
+                                    <p>Aqueça o óleo em uma panela grande a 180°C. Enquanto isso, abra a massa com um rolo até ficar com 1 cm de espessura e corte os donuts com um cortador próprio.</p>
+                                </li>
+                                <li>
+                                    <p>Frite os donuts aos poucos até dourarem, cerca de 1 minuto de cada lado. Escorra em papel toalha.</p>
+                                </li>
+                                <li>
+                                    <p>Se desejar, mergulhe os donuts no chocolate derretido e deixe secar sobre uma grade.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Strogonoff -->
+    <div class="modal fade" id="modal-strogonoff" tabindex="-1" aria-labelledby="modalStrogonoffLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalStrogonoffLabel">Strogonoff de Mignon</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container d-flex justify-content-center">
+                        <img class="modal-image" src="/assets/strogonoff.jpg" alt="">
+                    </div>
+                    <nav class="nav nav-tabs">
+                        <button data-bs-toggle="tab" data-bs-target="#strogonoff-ingredientes" class="nav-link active" type="button">Ingredientes</button>
+                        <button data-bs-toggle="tab" data-bs-target="#strogonoff-preparo" class="nav-link" type="button">Modo de Preparo</button>
+                    </nav>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="strogonoff-ingredientes">
+                            <h2>Ingredientes (6 porções)</h2>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/b4cd3b04bed02500e199693d344b9225/carne.jpg" alt="">
+                                        <p>500 g de filé mignon em tiras</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/fee490558c51713d4667115bf20aaf60/cebola.jpg" alt="">
+                                        <p>1 cebola média picada</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/264ab3eddf34e01ab632265039f7ccb4/alho.jpg" alt="">
+                                        <p>2 dentes de alho picados</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/8e41bece65d5b24116c53e27ec741e66/cogumelo-champignon.jpg" alt="">
+                                        <p>200 g de champignon fatiado</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/0758d9b8deaaa22383d9fbd839ea686a/ketchup.jpg" alt="">
+                                        <p>3 colheres (sopa) de ketchup</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/4a6cad53fb03f8c176eb1dac91ed8494/mostarda.jpg" alt="">
+                                        <p>1 colher (sopa) de mostarda</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/6c8b68b86cf683a8f29557161125dcbd/creme-de-leite.jpg" alt="">
+                                        <p>1 lata de creme de leite</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://placehold.co/40x40" alt="">
+                                        <p>Óleo para refogar</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/a8c3c6135af458d29f463794aa32c2cf/sal.jpg" alt="">
+                                        <p>Sal e pimenta a gosto</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="strogonoff-preparo">
+                            <h2>Modo de Preparo</h2>
+                            <ol>
+                                <li>
+                                    <p>Em uma panela grande, aqueça o óleo e doure a cebola e o alho.</p>
+                                </li>
+                                <li>
+                                    <p>Adicione o filé mignon e frite até dourar.</p>
+                                </li>
+                                <li>
+                                    <p>Acrescente o champignon, o ketchup e a mostarda, e misture bem.</p>
+                                </li>
+                                <li>
+                                    <p>Reduza o fogo e adicione o creme de leite, mexendo sempre até formar um molho homogêneo.</p>
+                                </li>
+                                <li>
+                                    <p>Tempere com sal e pimenta a gosto. Cozinhe por mais 5 minutos, sem deixar ferver.</p>
+                                </li>
+                                <li>
+                                    <p>Sirva com arroz branco e batata palha.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Feijoada -->
+    <div class="modal fade" id="modal-feijoada" tabindex="-1" aria-labelledby="modalFeijoadaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalFeijoadaLabel">Feijoada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container d-flex justify-content-center">
+                        <img class="modal-image" src="/assets/feijoada.jpg" alt="">
+                    </div>
+                    <nav class="nav nav-tabs">
+                        <button data-bs-toggle="tab" data-bs-target="#feijoada-ingredientes" class="nav-link active" type="button">Ingredientes</button>
+                        <button data-bs-toggle="tab" data-bs-target="#feijoada-preparo" class="nav-link" type="button">Modo de Preparo</button>
+                    </nav>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="feijoada-ingredientes">
+                            <h2>Ingredientes (20 porções)</h2>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/9960bdaf8ad9909a5de1eabfcc723515/feijao-preto.jpg" alt="">
+                                        <p>1 kg de feijão preto</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/6bd178848d9eb9dea6bd76e599866129/carne-seca.jpg" alt="">
+                                        <p>100 g de carne seca</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/88d5ac1756237ee67090822797d5f3b6/costela-de-porco.jpg" alt="">
+                                        <p>100 g de costelinha de porco</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/8e47fd23c0849660f373368ed36b45dc/linguica-portuguesa.jpg" alt="">
+                                        <p>100 g de linguiça</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/ad3a9b7792d7617df7494390bde27ecf/pe-de-porco.jpg" alt="">
+                                        <p>100 g de pé de porco</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/eabed80c0ba84e67be3c8d5106813ef8/louro.jpg" alt="">
+                                        <p>2 folhas de louro</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/a8c3c6135af458d29f463794aa32c2cf/sal.jpg" alt="">
+                                        <p>Sal e pimenta a gosto</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/fee490558c51713d4667115bf20aaf60/cebola.jpg" alt="">
+                                        <p>1 cebola grande</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 receita-item">
+                                        <img src="https://static.itdg.com.br/images/40-40/264ab3eddf34e01ab632265039f7ccb4/alho.jpg" alt="">
+                                        <p>6 dentes de alho</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="feijoada-preparo">
+                            <h2>Modo de Preparo</h2>
+                            <ol>
+                                <li>
+                                    <p>Coloque as carnes de molho por 36 horas ou mais, vá trocando a água várias vezes, se for ambiente quente ou verão, coloque gelo por cima ou em camadas frias.</p>
+                                </li>
+                                <li>
+                                    <p>Coloque para cozinhar passo a passo: as carnes duras, em seguida as carnes moles.</p>
+                                </li>
+                                <li>
+                                    <p>Quando estiver mole coloque o feijão, e retire as carnes.</p>
+                                </li>
+                                <li>
+                                    <p>Finalmente tempere o feijão.</p>
+                                </li>
+                                <li>
+                                    <p>Acompanhamentos: Couve, arroz branco, laranja, bistecas, farofa, quibebe de abóbora, baião de dois, bacon, torresmo, lingüicinha e caldinho temperado - copinhos.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

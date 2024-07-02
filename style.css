@@ -1,0 +1,185 @@
+.navbar-nav .nav-link.active {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.nav-link {
+    text-align: center;
+    color: #fff;
+}
+
+section {
+    background-color: #fff;
+    padding: 70px;
+}
+
+section#receitas{
+    padding: 0px;
+}
+
+section#sobre{
+    min-height: 0vh;
+}
+
+section#contato{
+    background-color: #00000004;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #499b50;
+    color: #fff;
+    z-index: 10;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#btn-checar-emails {
+    position: fixed;
+    bottom: 5vh;
+    right: 2vh;
+}
+
+.custom-carousel {
+    max-height: 400px; 
+    overflow: hidden;
+}
+
+.custom-carousel .carousel-inner {
+    max-height: 400px; 
+}
+
+.custom-carousel .carousel-inner img {
+    max-height: 400px; 
+    object-fit: cover;
+}
+
+.titulo{
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+.receita-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.receita-item p{
+    padding-left: 16px;
+    text-align: right;
+}
+
+h2{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.modal-lg {
+    max-width: 80%;
+}
+
+.card > img {
+    width: 100%;
+    height: 100%;
+    max-width: 414px;
+    max-height: 414px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.modal-image{
+    max-width: 600px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.container.d-flex.justify-content-center{
+    margin-bottom: 18px;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+.card-body > p{
+    margin-bottom: 8px;
+}
+
+.chefe-sobre{
+    text-align: justify;
+}
+
+.chefe img{
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+textarea{
+    resize: none;
+}
+
+footer{
+    padding: 60px;
+    background-color: #198754;
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    .custom-carousel {
+        max-height: 200px; 
+        overflow: hidden; 
+    }
+
+    .custom-carousel .carousel-inner {
+        max-height: 200px; 
+    }
+
+    .custom-carousel .carousel-inner img {
+        max-height: 200px; 
+        object-fit: cover;
+    }
+
+    header{
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-tabs {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-tabs .nav-link {
+        margin-bottom: 5px;
+    }
+    .card{
+        margin-bottom: 16px;
+    }
+    .col-sm-12.col-md-6.col-lg-4.receita-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .col-sm-12.col-md-6.col-lg-4.receita-item p{
+        text-align: right;
+        font-size: 0.8em;
+    }
+
+    .chefe{
+        margin-bottom: 16px;
+    }
+
+    .chefe img{
+        border-radius: 8px;
+    }
+}
